@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guy2TestRedirections", "Test3rdTry\Guy2TestRedirections.csproj", "{A2CED5B1-73F2-A15C-5CB9-F094A1A6675D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests3rdTry", "Test3rdTry\Tests3rdTry.csproj", "{A2CED5B1-73F2-A15C-5CB9-F094A1A6675D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

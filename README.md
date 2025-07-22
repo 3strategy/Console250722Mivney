@@ -84,6 +84,5 @@
 8. I Commit Push in any case, and will continue to debug on the next version..
 9. After addressing problem (exe not found) I appeared that this is known VS2022 with Nunit3 that cannot be easily created for .Net Framework. 
 10. So, as advised I created a new Class Library Project:
-    ![alt text](image-1.png)
-11. And then, added NUnit3 nuget to it. This way some of the tests started passing as expected (3 out of 7 passed). Commit. Push
-    ![tests pass](image.png)
+11. The class library solution worked partially but was not stable.
+12. I ended up bringing in an old unit test project that was created with NUnit framework.

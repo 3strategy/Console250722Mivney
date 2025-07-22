@@ -19,7 +19,8 @@ namespace T22Mivney
             Node3a3Tests(); // Node program
         }
 
-
+        // these were the early tests. 
+        // for unit testing in project Tests3rdTry
         public static void Node3a3Tests()
         {
             Node<int> c0 = BuildIntListFromString("5,5,5,4,5");
@@ -27,7 +28,6 @@ namespace T22Mivney
             Console.WriteLine("CLEANUP");
             //test RemoveObjAny
             var tmp = RemoveObjAny(c0, 5);
-            Debug.Assert(NodeToString(tmp) == "4");
             PrintNode(tmp);
 
             var c4 = BuildIntListFromString("4,4,-5,-5,-5,8,8,4,6,-5,7,8,8,8,8,8,9");
@@ -38,16 +38,13 @@ namespace T22Mivney
             PrintNode(c4);
             Console.WriteLine("print again");
             PrintNode(c4);
-            Debug.Assert(NodeToString(c4) == "4 ⟶  -5 ⟶  8 ⟶  4 ⟶  6 ⟶  -5 ⟶  7 ⟶  8 ⟶  9");
-            
+
 
             var c2 = BuildIntListFromString("4,-1,4,-3,-3,4,4,-5,-5,-3,-5");
             PrintNode(c2);
             var l1 = BuildIntListFromString("4,-5,99");
             //test IsSubList
             Console.WriteLine($"l1 is{(IsSubList(l1, c2) ? "" : " NOT a")} sublist of c2");
-  
-
         }
     }
 }
