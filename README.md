@@ -5,3 +5,4 @@
 3. So the shortest way to get started is by cloning this project and working on it. 
 
 [Here is the GPT chat](https://chatgpt.com/share/687fcb71-ee74-800e-8cf4-8f5ecca3f73c) 
+![alt text](image-2.png)
