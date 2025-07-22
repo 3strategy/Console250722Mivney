@@ -1,7 +1,8 @@
-﻿using Unit4.CollectionsLib;
+﻿using NUnit.Framework;
+using Unit4.CollectionsLib;
 using static T22Mivney.NodeSolutions;
 
-namespace UnitestsMivney
+namespace TestProjClassLib
 {
     [TestFixture]
     public class Tests

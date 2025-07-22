@@ -21,7 +21,7 @@
 2. I then added the soluiton to GitHub.
 3. Next I'm adding, in the UnitestsProject a reference to the console project (right clicking dependencies and adding a project reference). For whomever clones this solution, this step will not be required, but I'm explaining anyways for those who try to replicate the process step by step. Commit, Push.
 4. Getting ready for unit testing I made sure the Unitests project has all the access to the data structures and to the console project. Commit. Push.
-5. At this stage I'm prompting GPT with the following prompt
+5. At this stage I'm prompting GPT with the following prompt:
     I want to demo an NUnit3 test project that tests functions in a Console project T22Mivney. The test project is already in the same solution and is referencing the Console project. 
 
     In the C# solution containing a Console project we will use an NUnit3 test project testing the following 2 functions:
@@ -82,3 +82,8 @@
 6. at this stage GPT responds with full test using Assert.AreEqual. After a correction from me the tests are updated to new NUnit3 syntax and I copy the code to the test project. Tests Fail due to an infrastructeproblem. 
 7. [Our chat is here](https://chatgpt.com/share/687fcb71-ee74-800e-8cf4-8f5ecca3f73c) 
 8. I Commit Push in any case, and will continue to debug on the next version..
+9. After addressing problem (exe not found) I appeared that this is known VS2022 with Nunit3 that cannot be easily created for .Net Framework. 
+10. So, as advised I created a new Class Library Project:
+    ![alt text](image-1.png)
+11. And then, added NUnit3 nuget to it. This way some of the tests started passing as expected (3 out of 7 passed). Commit. Push
+    ![tests pass](image.png)
