@@ -2,7 +2,7 @@
 using Unit4.CollectionsLib;
 using static T22Mivney.NodeSolutions;
 
-namespace TestProjClassLib
+namespace Guy2TestRedirections
 {
     [TestFixture]
     public class Tests

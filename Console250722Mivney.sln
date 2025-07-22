@@ -5,12 +5,12 @@ VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T22Mivney", "T22Mivney\T22Mivney.csproj", "{4DADD86A-DACD-4F3E-96DF-3A4390307677}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProjClassLib", "TestProjClassLib\TestProjClassLib.csproj", "{0FE11732-FFA4-4617-B042-6E828BBD3A25}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guy2TestRedirections", "Test3rdTry\Guy2TestRedirections.csproj", "{A2CED5B1-73F2-A15C-5CB9-F094A1A6675D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,10 +22,10 @@ Global
 		{4DADD86A-DACD-4F3E-96DF-3A4390307677}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DADD86A-DACD-4F3E-96DF-3A4390307677}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DADD86A-DACD-4F3E-96DF-3A4390307677}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0FE11732-FFA4-4617-B042-6E828BBD3A25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0FE11732-FFA4-4617-B042-6E828BBD3A25}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0FE11732-FFA4-4617-B042-6E828BBD3A25}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0FE11732-FFA4-4617-B042-6E828BBD3A25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2CED5B1-73F2-A15C-5CB9-F094A1A6675D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2CED5B1-73F2-A15C-5CB9-F094A1A6675D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2CED5B1-73F2-A15C-5CB9-F094A1A6675D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2CED5B1-73F2-A15C-5CB9-F094A1A6675D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
