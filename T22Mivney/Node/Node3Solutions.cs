@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Unit4.CollectionsLib;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace T22Mivney
 {
@@ -139,6 +140,21 @@ namespace T22Mivney
                 else Console.WriteLine();
             }
 
+        }
+
+        /// <summary>
+        /// אולי דרך להקל על בדיקות - הפיכה למחרוזת של שרשרת
+        /// </summary>
+        /// <param name="head"></param>
+        public static string NodeToString(Node<int> head)
+        {
+            string result = string.Empty;
+            if (head == null)
+                return "";
+            else if (!head.HasNext())
+                return head.GetValue().ToString(); // no next, so we are done
+            else
+                return head.GetValue() + " ⟶  " + NodeToString(head.GetNext());
         }
         #endregion
     }

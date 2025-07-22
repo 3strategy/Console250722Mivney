@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,14 +27,19 @@ namespace T22Mivney
             Console.WriteLine("CLEANUP");
             //test RemoveObjAny
             var tmp = RemoveObjAny(c0, 5);
+            Debug.Assert(NodeToString(tmp) == "4");
             PrintNode(tmp);
 
             var c4 = BuildIntListFromString("4,4,-5,-5,-5,8,8,4,6,-5,7,8,8,8,8,8,9");
             PrintNode(c4);
             // test RemoveSequencesOfIdenticalNumbers
             RemoveSequencesOfIdenticalNumbers(c4);
-            Console.WriteLine("after shrinking identical sequnces");
+            Console.WriteLine("after shrinking identical sequences");
             PrintNode(c4);
+            Console.WriteLine("print again");
+            PrintNode(c4);
+            Debug.Assert(NodeToString(c4) == "4 ⟶  -5 ⟶  8 ⟶  4 ⟶  6 ⟶  -5 ⟶  7 ⟶  8 ⟶  9");
+            
 
             var c2 = BuildIntListFromString("4,-1,4,-3,-3,4,4,-5,-5,-3,-5");
             PrintNode(c2);
