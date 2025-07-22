@@ -150,11 +150,10 @@ namespace T22Mivney
         {
             string result = string.Empty;
             if (head == null)
-                return "";
-            else if (!head.HasNext())
+                return string.Empty;
+            if (!head.HasNext())
                 return head.GetValue().ToString(); // no next, so we are done
-            else
-                return head.GetValue() + " ⟶  " + NodeToString(head.GetNext());
+            return head.GetValue() + " ⟶ " + NodeToString(head.GetNext());
         }
         #endregion
     }

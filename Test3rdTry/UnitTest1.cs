@@ -73,10 +73,10 @@ namespace Guy2TestRedirections
 
             // Act
             RemoveSequencesOfIdenticalNumbers(list);
-
+            string resStr = NodeToString(list);
             // Assert
             Assert.That(
-                NodeToString(list),
+                resStr,
                 Is.EqualTo("4 ⟶ -5 ⟶ 8 ⟶ 4 ⟶ 6 ⟶ -5 ⟶ 7 ⟶ 8 ⟶ 9")
             );
         }
