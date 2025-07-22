@@ -1,6 +1,8 @@
 ﻿using NUnit.Framework;
 using Unit4.CollectionsLib;
 using static T22Mivney.NodeSolutions;
+//private GPT https://chatgpt.com/c/687fc9ac-fd10-8333-85f0-98941e31672b
+//public GPT https://chatgpt.com/share/687fcb71-ee74-800e-8cf4-8f5ecca3f73c
 
 namespace UnitTests
 {
