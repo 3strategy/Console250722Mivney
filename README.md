@@ -79,3 +79,6 @@
             Assert.Pass();
         }
     }
+6. at this stage GPT responds with full test using Assert.AreEqual. After a correction from me the tests are updated to new NUnit3 syntax and I copy the code to the test project. Tests Fail due to an infrastructeproblem. 
+7. [Our chat is here](https://chatgpt.com/share/687fcb71-ee74-800e-8cf4-8f5ecca3f73c) 
+8. I Commit Push in any case, and will continue to debug on the next version..

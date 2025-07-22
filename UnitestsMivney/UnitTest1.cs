@@ -3,26 +3,107 @@ using static T22Mivney.NodeSolutions;
 
 namespace UnitestsMivney
 {
+    [TestFixture]
     public class Tests
     {
         [SetUp]
         public void Setup()
         {
+            // Initialization before each test if needed
         }
 
         [Test]
-        public void Test1()
+        public void RemoveObjAny_RemovesAllInstances_WhenObjectIsPresent()
         {
-            // demo that the test project can Instanciate the data structures
-            // as well as access functions from the Console project
-            Node<int> c0 = BuildIntListFromString("5,5,5,4,5");
-            PrintNode(c0);
-            Console.WriteLine("CLEANUP");
-            //test RemoveObjAny
-            var tmp = RemoveObjAny(c0, 5);
-            PrintNode(tmp);
+            // Arrange
+            var list = BuildIntListFromString("5,5,5,4,5");
 
-            Assert.Pass();
+            // Act
+            var result = RemoveObjAny(list, 5);
+
+            // Assert
+            Assert.That(NodeToString(result), Is.EqualTo("4"));
+        }
+
+        [Test]
+        public void RemoveObjAny_ReturnsOriginal_WhenObjectNotPresent()
+        {
+            // Arrange
+            var list = BuildIntListFromString("1,2,3,4");
+
+            // Act
+            var result = RemoveObjAny(list, 5);
+
+            // Assert
+            Assert.That(NodeToString(result), Is.EqualTo("1 ⟶ 2 ⟶ 3 ⟶ 4"));
+        }
+
+        [Test]
+        public void RemoveObjAny_RemovesMiddleInstances_OnlyLeavesOthers()
+        {
+            // Arrange
+            var list = BuildIntListFromString("1,2,3,2,4");
+
+            // Act
+            var result = RemoveObjAny(list, 2);
+
+            // Assert
+            Assert.That(NodeToString(result), Is.EqualTo("1 ⟶ 3 ⟶ 4"));
+        }
+
+        [Test]
+        public void RemoveObjAny_HandlesEmptyList_Gracefully()
+        {
+            // Arrange
+            Node<int> list = null;
+
+            // Act
+            var result = RemoveObjAny(list, 1);
+
+            // Assert
+            Assert.That(result, Is.Null);
+        }
+
+        [Test]
+        public void RemoveSequencesOfIdenticalNumbers_RemovesConsecutiveDuplicates()
+        {
+            // Arrange
+            var list = BuildIntListFromString("4,4,-5,-5,-5,8,8,4,6,-5,7,8,8,8,8,8,9");
+
+            // Act
+            RemoveSequencesOfIdenticalNumbers(list);
+
+            // Assert
+            Assert.That(
+                NodeToString(list),
+                Is.EqualTo("4 ⟶ -5 ⟶ 8 ⟶ 4 ⟶ 6 ⟶ -5 ⟶ 7 ⟶ 8 ⟶ 9")
+            );
+        }
+
+        [Test]
+        public void RemoveSequencesOfIdenticalNumbers_LeavesSingleElementList_Unchanged()
+        {
+            // Arrange
+            var list = BuildIntListFromString("7");
+
+            // Act
+            RemoveSequencesOfIdenticalNumbers(list);
+
+            // Assert
+            Assert.That(NodeToString(list), Is.EqualTo("7"));
+        }
+
+        [Test]
+        public void RemoveSequencesOfIdenticalNumbers_NoSequences_NoChange()
+        {
+            // Arrange
+            var list = BuildIntListFromString("1,2,3,2,1");
+
+            // Act
+            RemoveSequencesOfIdenticalNumbers(list);
+
+            // Assert
+            Assert.That(NodeToString(list), Is.EqualTo("1 ⟶ 2 ⟶ 3 ⟶ 2 ⟶ 1"));
         }
     }
 }
