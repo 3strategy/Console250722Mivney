@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Unit4.CollectionsLib;
 using static T22Mivney.NodeSolutions;
+using static T22Mivney.BinNode1Solutions;
 
 namespace T22Mivney
 {
@@ -13,10 +14,11 @@ namespace T22Mivney
     {
         static void Main(string[] args)
         {
+            JustADemo();
             //Main1(); // Turtle program
             //Main2(); // Frog program
 
-            Node3a3Tests(); // Node program
+            //Node3a3Tests(); // Node program
         }
 
         // these were the early tests. 
