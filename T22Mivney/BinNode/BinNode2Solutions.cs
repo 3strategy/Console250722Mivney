@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace T22Mivney
 {
-    public class BinNode2Solutions
+    public partial class BinNodeSolutions
     {
     }
 }

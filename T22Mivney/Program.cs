@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Unit4.CollectionsLib;
 using static T22Mivney.NodeSolutions;
-using static T22Mivney.BinNode1Solutions;
+using static T22Mivney.BinNodeSolutions;
 
 namespace T22Mivney
 {
