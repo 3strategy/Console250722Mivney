@@ -8,3 +8,30 @@
 
 
 ![alt text](image-2.png)
+
+## First run
+When you first run the project you should get this:
+![alt text](image.png)
+
+---
+
+the project now support creating trees (mainly for testing purposed) using the following syntax:
+
+```csharp
+var root = BuildTreeFromVisual(new[] {
+    "     5     ",
+    "  3     8  ",
+    "1  4       "
+});
+```
+
+or with **line spaces** and this would support test cases like this one:
+```
+[TestCase(new[] {
+    "   10   ",
+    "        ",
+    " -2  7  "
+}, 15, TestName = "TreeWithNegativeValues")]
+```
+This usage is demonstrated in this test class:
+`..\Test3rdTry\BinNode\SumBinaryTreeNodes.cs`

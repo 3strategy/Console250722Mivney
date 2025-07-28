@@ -5,15 +5,15 @@ namespace T22Mivney
 {
     public partial class BinNodeSolutions
     {
-        public static void JustADemo()
-        {
-            var root = BuildTreeFromVisual(new[] {
-                "     5     ",
-                "  3     8  ",
-                "1  4       "
-            });
-            TreeCanvas.AddTree(root);
-        }
+public static void JustADemo()
+{
+var root = BuildTreeFromVisual(new[] {
+    "     5     ",
+    "  3     8  ",
+    "1  4       "
+});
+    TreeCanvas.AddTree(root);
+}
 
         public static void JustAnOldDemo()
         {

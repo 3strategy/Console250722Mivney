@@ -30,11 +30,11 @@ namespace Tests3rdTry.BinNode
             "                ",
             "           30   "
         }, 60, TestName = "RightSkewedTree")]
-        [TestCase(new[] {
-            "   10   ",
-            "        ",
-            " -2  7  "
-        }, 15, TestName = "TreeWithNegativeValues")]
+[TestCase(new[] {
+    "   10   ",
+    "        ",
+    " -2  7  "
+}, 15, TestName = "TreeWithNegativeValues")]
         [TestCase(new[] {
             "   0   ",
             "       ",
